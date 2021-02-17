@@ -40,7 +40,7 @@ func main() {
 	rand := rand.New(mt19937.New())
 	rand.Seed(seed.Int64())
 
-	token, err := readTokenFile("../token.tk")
+	token, err := readTokenFile("token.tk")
 	if err != nil {
 		fmt.Println(err)
 	}
